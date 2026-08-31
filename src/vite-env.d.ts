@@ -10,6 +10,7 @@ interface ImportMetaEnv {
     readonly VITE_GATEWAY_URL?: string;
     readonly VITE_GATEWAY_AMBIENTE?: string;
     readonly VITE_ORION_AMBIENTE?: string;
+    readonly VITE_ASC_AMBIENTE?: string;
     readonly VITE_OAUTH_AMBIENTE?: string;
     readonly VITE_APP_SECRET_TOKEN_QR?: string;
 }
