@@ -9,7 +9,7 @@ Login e JWT são os **mesmos** do Enterprise (Gateway → oAuth). Não há login
 | Peça | Valor |
 |------|--------|
 | Sistema | `ORI` (Orion) |
-| Módulo raiz | `ORI0000000` |
+| Módulo de segurança | `ORION000000` (legado `ORI0000000`) |
 | Gateway | `VITE_GATEWAY_URL` (local: `http://localhost:8080`) |
 | API de negócio | `/api/restaurante/**` |
 | Porta local | `3001` |
@@ -33,7 +33,8 @@ Secrets: os mesmos do Gateway (`VPS_*`) + `FRONTEND_SECRET_TOKEN`.
 
 ## Módulos
 
-- `ORI0000000` Início → `/inicio`
+- `ORION000000` Segurança / Início → `/inicio`
+- `ORI0000000` Legado (ainda aceito)
 - `ORI0000001` Cardápio → `/cardapio`
 - `ORI0000002` Pedidos → `/pedidos`
 - `ORI0000003` Mesas → `/mesas`
